@@ -1,0 +1,5 @@
+<% @trips.each do |trip| %>
+  <%= link_to trip.name, trip_path(trip) %>
+  <%= trip.start_date %>
+  <%= trip.end_date %>
+<% end %>

@@ -1,0 +1,7 @@
+<% @trail.trips.each do |trip| %>
+  <%= trip.name %>
+  <%= trip.start_date %>
+  <%= trip.end_date %>
+<% end %>
+
+<p>Trips with this trail: <%= @trail.trips.count %></p>
